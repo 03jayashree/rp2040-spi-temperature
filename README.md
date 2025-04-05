@@ -31,7 +31,33 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
 For more details on GPIO pin functions and internal peripheral mappings, refer to the official [RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf).Each GPIO pin on the RP2040 is connected to various internal peripherals (like SPI,UART,I2C etc.) , offering high flexibility for custom I/O functions.SIO, PIO0 and PIO1 are connected to all GPIO pins and are controlled by software (or software controlled state machines) so can be used to implement
 many functions.
 
-<h2>Introduction to Raspberry Pi</h2>
+<h2>2-Introduction to Raspberry Pi</h2>
+
+The RP2040 microcontroller is used in various Raspberry Pi boards, including the Pico, Pico W, Pico H, and Pico WH. For this project, we are using the Raspberry Pi Pico as our development platform.
+<h3>2.1-Key Features</h3>
+
+- **USB 1.1 Micro-B Port** – Used for power, programming, and USB communication (host/device).
+-**2 MB Flash Memory** – On-board QSPI flash for storing code and data.
+-**40-Pin Header** – With 26 multifunctional GPIOs supporting UART, SPI, I2C, ADC, PWM, etc.
+-**3-Pin Debug Header** – For low-level debugging via external tools.
+-**8Power Supply Circuitry** – Accepts 1.8V–5.5V input with onboard 3.3V regulation.
+-**BOOTSEL Button** – For entering USB mass storage mode to flash new firmware.
+-**On-Board LED** – User-controllable LED connected to GPIO25.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
