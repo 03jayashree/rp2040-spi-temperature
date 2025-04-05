@@ -4,7 +4,7 @@ This project demonstrates how to use the RP2040’s PIO (Programmable I/O) as an
   <li><a href="#introduction">Introduction to RP2040 Microcontroller</a></li>
 <h2>1-Introduction to RP2040 Microcontroller</h2>
 The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Raspberry Pi, known for its high performance, low cost, and ease of use, featuring a rich set of peripherals and unique Programmable I/O (PIO) subsystem. 
-<h3>Key Features</h3>
+<h3>1.1-Key Features</h3>
 
 - **Dual-core ARM Cortex-M0+** @ 133MHz
 - **264kB** of embedded **SRAM** in 6 banks
