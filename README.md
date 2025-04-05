@@ -9,5 +9,15 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
 - **Dual-core ARM Cortex-M0+** @ 133MHz
 - **264kB** of embedded **SRAM** in 6 banks
 - 6 dedicated IO for **16MB** external **QSPI Flash** with **eXecute In Place (XIP)**
+- **4 channel ADC with internal temperature sensor, 500ksps, 12-bit conversion**
+- **30** multi-function General Purpose IO
+- Dedicated hardware for commonly used peripherals
+   - **2 UARTs**
+   - **2 SPI** controllers
+   - **16 PWM** channels
+   - **USB 1.1 Host/Device**
+-**8 Programmable IO** state machine for extended peripheral support
+
+
 
 
