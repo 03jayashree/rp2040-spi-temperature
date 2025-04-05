@@ -37,12 +37,12 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 <h3>2.1-Key Features</h3>
 
 - **USB 1.1 Micro-B Port** – Used for power, programming, and USB communication (host/device).
--**2 MB Flash Memory** – On-board QSPI flash for storing code and data.
--**40-Pin Header** – With 26 multifunctional GPIOs supporting UART, SPI, I2C, ADC, PWM, etc.
--**3-Pin Debug Header** – For low-level debugging via external tools.
--**8Power Supply Circuitry** – Accepts 1.8V–5.5V input with onboard 3.3V regulation.
--**BOOTSEL Button** – For entering USB mass storage mode to flash new firmware.
--**On-Board LED** – User-controllable LED connected to GPIO25.
+- **2 MB Flash Memory** – On-board QSPI flash for storing code and data.
+- **40-Pin Header** – With 26 multifunctional GPIOs supporting UART, SPI, I2C, ADC, PWM, etc.
+- **3-Pin Debug Header** – For low-level debugging via external tools.
+- **8Power Supply Circuitry** – Accepts 1.8V–5.5V input with onboard 3.3V regulation.
+- **BOOTSEL Button** – For entering USB mass storage mode to flash new firmware.
+- **On-Board LED** – User-controllable LED connected to GPIO25.
 
 
 
