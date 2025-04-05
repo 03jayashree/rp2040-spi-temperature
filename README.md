@@ -6,7 +6,7 @@ This project demonstrates how to use the RP2040’s PIO (Programmable I/O) as an
 The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Raspberry Pi, known for its high performance, low cost, and ease of use, featuring a rich set of peripherals and unique Programmable I/O (PIO) subsystem. 
 <h3>Key Features</h3>
 
-### Key Benefits
+
 
 - **Python-based Testing:** Use Python's extensive libraries to simplify complex testing tasks.
 - **Coroutines for Concurrency:** Schedule tasks and trigger events using coroutines.
