@@ -7,11 +7,7 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
 <h3>Key Features</h3>
 
 - **Dual-core ARM Cortex-M0+** @ 133MHz
+- **264kB** of embedded **SRAM** in 6 banks
 
 
-- **Python-based Testing:** Use Python's extensive libraries to simplify complex testing tasks.
-- **Coroutines for Concurrency:** Schedule tasks and trigger events using coroutines.
-- **Reusable and Modular:** Easily maintain and extend testbenches.
-- **Provides Interface:** Provides a Python interface to control standard RTL simulators (Cadence, Questa, VCS, etc.).
-- Cocotb is completely free and open source.
-  
+
