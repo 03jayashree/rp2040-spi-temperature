@@ -18,6 +18,9 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
    - **USB 1.1 Host/Device**
      
 - **8 Programmable IO** state machine for extended peripheral support
+<h3>1.2-Block Diagram</h3>
+
+![RP2040](diagrams/rp2040_block_diagram.png)
 
 
 
