@@ -76,9 +76,9 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 
 For more details, refer to the official [Raspberry Pi Pico Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
 
-#### 2.3-Pin Mappings of RPi
+### 2.3-Pin Mappings of RPi
 
-### SPI Pin Mapping
+#### SPI Pin Mapping
 The RP2040 has two built-in SPI interfaces — called SPI0 and SPI1 — which can be connected to different GPIO pins. This flexibility helps us choose the best pins based on our circuit or board layout. The table below shows which GPIOs can be used for each SPI function (like SCK, MOSI, MISO, CS) so we can easily set up SPI communication on your Raspberry Pi Pico.
 
 | **SPI Instance** | **Chip Select (CS)** | **SCK (Clock)**    | **MOSI (TX)**      | **MISO (RX)**      |
