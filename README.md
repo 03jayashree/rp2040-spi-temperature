@@ -23,7 +23,8 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
 - **8 Programmable IO** state machine for extended peripheral support
 <h3>1.2-Block Diagram</h3>
 
-![RP2040 Block Diagram](diagrams/rp2040_block_dia.png)
+<img src="diagrams/rp2040_block_dia.png" alt="RP2040 Block Diagram" width="400">
+
 <h3>1.3-Pinout</h3>
 
 ![RP2040 Pinout](diagrams/rp2040_pinout.png)
@@ -40,7 +41,7 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 - **2 MB Flash Memory** – On-board QSPI flash for storing code and data.
 - **40-Pin Header** – With 26 multifunctional GPIOs supporting UART, SPI, I2C, ADC, PWM, etc.
 - **3-Pin Debug Header** – For low-level debugging via external tools.
-- **8Power Supply Circuitry** – Accepts 1.8V–5.5V input with onboard 3.3V regulation.
+- **Power Supply Circuitry** – Accepts 1.8V–5.5V input with onboard 3.3V regulation.
 - **BOOTSEL Button** – For entering USB mass storage mode to flash new firmware.
 - **On-Board LED** – User-controllable LED connected to GPIO25.
 
