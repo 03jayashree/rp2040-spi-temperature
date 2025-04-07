@@ -89,7 +89,7 @@ The RP2040 has two built-in SPI interfaces — called SPI0 and SPI1 — which ca
 #### I2C Pin Mapping
 The RP2040 supports two I²C interfaces — named I2C0 and I2C1. Like SPI, these can be connected to multiple GPIO pins using flexible pin mapping.
 
-| **I2C Interface** | **SDA **                          | **SCL**                          |
+| **I2C Interface** | **SDA**                          | **SCL**                          |
 |------------------|-----------------------------------------------|-----------------------------------------------|
 | **I2C0**          | `GPIO0`,`GPIO4`,`GPIO8`, `GPIO12`, `GPIO16`, `GPIO20`   | `GPIO1`,`GPIO5`,`GPIO9`, `GPIO13`, `GPIO17`, `GPIO21`   |
 | **I2C1**          | `GPIO2`, `GPIO6`, `GPIO10`, `GPIO14`, `GPIO18`, `GPIO26`  | `GPIO3`, `GPIO7`, `GPIO11`, `GPIO15`, `GPIO19`, `GPIO27`  |
@@ -97,7 +97,7 @@ The RP2040 supports two I²C interfaces — named I2C0 and I2C1. Like SPI, these
 #### UART Pin Mapping 
 The RP2040 includes two UART interfaces — UART0 and UART1 — which can also be connected to different GPIOs using internal routing.
 
-| **UART Interface** | **TX GPIO Options**                        | **RX GPIO Options**                        |
+| **UART Interface** | **TX**                        | **RX**                        |
 |--------------------|--------------------------------------------|--------------------------------------------|
 | **UART0**          | `GPIO0`, `GPIO12`, `GPIO16`                      | `GPIO1`, `GPIO13`, `GPIO17`                      |
 | **UART1**          | `GPIO4`, `GPIO8`                     | `GPIO5`, `GPIO9`                  |
