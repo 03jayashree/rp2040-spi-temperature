@@ -27,7 +27,7 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
 
 <h3>1.3-Pinout</h3>
 
-<img src="diagrams/rp2040_pinout.png" alt="RP2040 Pinout" width="700" height="500">
+<img src="diagrams/rp2040_pinout.png" alt="RP2040 Pinout" width="700" height="600">
 
 For more details on GPIO pin functions and internal peripheral mappings, refer to the official [RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf).Each GPIO pin on the RP2040 is connected to various internal peripherals (like SPI,UART,I2C etc.) , offering high flexibility for custom I/O functions.SIO, PIO0 and PIO1 are connected to all GPIO pins and are controlled by software (or software controlled state machines) so can be used to implement
 many functions.
