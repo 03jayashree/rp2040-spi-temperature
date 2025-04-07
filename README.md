@@ -47,7 +47,7 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 
 <h3>2.2-Pin Configuration</h3>
 
-<img src="diagrams/rpi_pinout.png" alt="RPi Pico Pinout" width="700" height="600">
+<img src="diagrams/rpi_pinout.png" alt="RPi Pico Pinout" width="800" height="500">
 
 
 
