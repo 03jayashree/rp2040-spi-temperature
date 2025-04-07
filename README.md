@@ -73,6 +73,21 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 - **Debug Pins:**
     - **`SWDIO`** and **`SWCLK`** are used for debugging (Single Wire Debug)
 
+For more details, refer to the official [Raspberry Pi Pico Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
+
+<h3>Pin Mappings of RPi</h3>
+
+## SPI Pin Mapping
+
+| **SPI Instance** | **Chip Select (CS)** | **SCK (Clock)**    | **MOSI (TX)**      | **MISO (RX)**      |
+|------------------|----------------------|---------------------|--------------------|--------------------|
+| **SPI0**         | GPIO17, GPIO5        | GPIO18, GPIO6       | GPIO19, GPIO7      | GPIO16, GPIO4      |
+| **SPI1**         | GPIO13, GPIO9        | GPIO14, GPIO10      | GPIO15, GPIO11     | GPIO12, GPIO8      |
+
+> ℹ️ RP2040 allows remapping of SPI signals to multiple GPIOs. The pins listed are the default and commonly used ones.
+
+---
+
 
 
 
