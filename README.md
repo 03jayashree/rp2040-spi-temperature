@@ -76,7 +76,7 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 
 For more details, refer to the official [Raspberry Pi Pico Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
 
-<h3>Pin Mappings of RPi</h3>
+<h3>2.3-Pin Mappings of RPi</h3>
 
 ## SPI Pin Mapping
 
