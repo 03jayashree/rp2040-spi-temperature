@@ -45,6 +45,8 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 - **BOOTSEL Button** – For entering USB mass storage mode to flash new firmware.
 - **On-Board LED** – User-controllable LED connected to GPIO25.
 
+<h3>2.2-Pin Configuration</h3>
+
 
 
 
