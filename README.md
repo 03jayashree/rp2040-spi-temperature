@@ -49,7 +49,8 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
 
 <img src="diagrams/rpi_pinout.png" alt="RPi Pico Pinout" width="800" height="500">
 
-
+- **Total physical pins on the Pico board: 40**
+- **RP2040 supports 30 GPIOs: `GPIO0` to `GPIO29`**
 
 
 
