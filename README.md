@@ -140,8 +140,8 @@ In this mode, clock polarity is 0, which indicates that the idle state of the cl
 ![SPI Mode 1](diagrams/mode_1.png)
 **`SPI Mode 1`, `CPOL = 0`, `CPHA = 1`: CLK idle state = low, data sampled on the falling edge and shifted on the rising edge.**
 
-
-
+For a deeper understanding of how SPI works on the RP2040, including detailed register-level explanations and hardware behavior, you can refer to the official 
+[RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf).It provides comprehensive information on SPI peripherals, configuration, and supported modes.
 
 
 
