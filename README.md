@@ -137,6 +137,7 @@ We will be using **MODE 1** in our project.
 
 In this mode, clock polarity is 0, which indicates that the idle state of the clock signal is low. The clock phase in this mode is 1, which indicates that the data is sampled on the falling edge (shown by the orange dotted line) and the data is shifted on the rising edge (shown by the dotted blue line) of the clock signal.
 
+![SPI Mode 1](diagrams/mode_1.png)
 
 
 
