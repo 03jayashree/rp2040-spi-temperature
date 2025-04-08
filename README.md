@@ -114,8 +114,14 @@ This diagram shows how the internal GPIO pins of the RP2040 microcontroller are 
 
 ## 3-SPI-Serial Peripheral Interface
 SPI is a synchronous, full-duplex serial communication bus with three or more signals. It is **synchronous** because of the presence of a dedicated clock line shared between all nodes. The clock helps all devices taking part in the communication to remain in sync. This increases the effective data rate on the line while reducing errors. **Full-duplex** means data can be sent and received at the same time using the dedicated data lines. In a standard application, there will be four signal lines.
-  - **MOSI**-This stands for Master Out Slave In or Controller Out Peripheral In (COPI) . This pin is the data output pin for the Central device but also at the same time, the data input pin for the Peripheral                device.
+  - **MOSI**-This stands for Master Out Slave In or Controller Out Peripheral In (COPI) . This pin is the data output pin for the Central device but also at the same time, the data input pin for the Peripheral         device.
+  - **MISO**-This stands for Master In Slave Out or Controller In Peripheral Out(CIPO) . This pin is the data output of the Peripheral node and thus the data input pin for the Central node.
+  - **SCK**-This is the common Serial Clock line shared between all devices. Only the Central node can generate the clock. All other devices must read the clock.
+  - **CS**-Chip Select is the line used to select a device on the bus. Each node needs a separate CS line for selecting that device. The state of the CS line will be `HIGH` by default when the device is not selected. To select the device, a Central node must pull the CS line of that device to `LOW`.
 
+Only one device can generate a clock signal on the SCK line at a time. This device with the role of generating the SPI clock is called a Central node, also called Master in obsolete terms. All other devices will act like Peripheral (or Slave) nodes at this time.
+
+Since only the Central node can generate the clock, only a central node can initiate a data transfer. Therefore, SPI communication must employ a Command-Response scheme for communication. A Central node can pull the CS pin of a node LOW and then send some command to it. Upon receiving the command, the Peripheral node starts sending the response data. The Central must maintain the clock signal for the period of time the peripheral is sending data.
 
 
 
