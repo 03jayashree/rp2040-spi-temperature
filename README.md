@@ -4,6 +4,7 @@ This project utilizes the RP2040's Programmable I/O (PIO) to implement an SPI sl
 <ul>
   <li><a href="#rp2040">Introduction to RP2040 Microcontroller</a></li>
   <li><a href="#raspberrypi">Introduction to Raspberry Pi</a></li>
+  <li><a href="#spi">Serial Peripheral Interface</a></li>
 </ul>
 
 ## 1-Introduction to RP2040 Microcontroller
@@ -111,8 +112,8 @@ This diagram shows how the internal GPIO pins of the RP2040 microcontroller are 
 
 <img src="diagrams/RP2040 to Raspberry Pi Pico GPIO Mapping Schematic.png" alt="RP2040 to Raspberry Pi Pico GPIO Mapping Schematic" width="800" height="500">
 
+## SPI-Serial Peripheral Interface
 
-RP2040 to Raspberry Pi Pico GPIO Mapping Schematic.png
 
 
 
