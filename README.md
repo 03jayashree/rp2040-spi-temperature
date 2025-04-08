@@ -123,6 +123,19 @@ Only one device can generate a clock signal on the SCK line at a time. This devi
 
 Since only the Central node can generate the clock, only a central node can initiate a data transfer. Therefore, SPI communication must employ a Command-Response scheme for communication. A Central node can pull the CS pin of a node LOW and then send some command to it. Upon receiving the command, the Peripheral node starts sending the response data. The Central must maintain the clock signal for the period of time the peripheral is sending data.
 
+### 3.1-Clock Polarity and Clock Phase
+In SPI, the main can select the clock polarity and clock phase. The CPOL bit sets the polarity of the clock signal during the idle state. The idle state is defined as the period when CS is high and transitioning to low at the start of the transmission and when CS is low and transitioning to high at the end of the transmission. The CPHA bit selects the clock phase. Depending on the CPHA bit, the rising or falling clock edge is used to sample and/or shift the data. The main must select the clock polarity and clock phase, as per the requirement of the subnode. Depending on the CPOL and CPHA bit selection, four SPI modes are available.
+
+| **SPI Mode** | **CPOL** | **CPHA** | **Clock Polarity in Idle State** | **Clock Phase Used to Sample and/or Shift the Data** |
+|--------------|----------|----------|----------------------------------|------------------------------------------------------|
+| 0            | 0        | 0        | Logic low                        | Data sampled on rising edge and shifted out on falling edge |
+| 1            | 0        | 1        | Logic low                        | Data sampled on falling edge and shifted out on rising edge |
+| 2            | 1        | 0        | Logic high                       | Data sampled on falling edge and shifted out on rising edge |
+| 3            | 1        | 1        | Logic high                       | Data sampled on rising edge and shifted out on falling edge |
+
+We will be using **MODE 1** in our project.
+
+In this mode, clock polarity is 0, which indicates that the idle state of the clock signal is low. The clock phase in this mode is 1, which indicates that the data is sampled on the falling edge (shown by the orange dotted line) and the data is shifted on the rising edge (shown by the dotted blue line) of the clock signal.
 
 
 
