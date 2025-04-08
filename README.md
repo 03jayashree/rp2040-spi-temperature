@@ -106,7 +106,8 @@ The RP2040 includes two UART interfaces — UART0 and UART1 — which can also b
 #### PIO Pin Mapping
 On the Raspberry Pi Pico board, most GPIO pins are accessible and can be used for PIO. However, GPIO23, GPIO24, GPIO25 and GPIO29 (ADC3) are either used internally (like LED or voltage monitoring) or not exposed via the physical headers, so they are not available for general-purpose PIO use in most projects.
 
-
+### 2.4-RP2040 to Raspberry Pi Pico GPIO Mapping Schematic
+This diagram shows how the internal GPIO pins of the RP2040 microcontroller are connected to the physical pins of the Raspberry Pi Pico board.
 
 
 
