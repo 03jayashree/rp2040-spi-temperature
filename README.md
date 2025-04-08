@@ -112,7 +112,9 @@ This diagram shows how the internal GPIO pins of the RP2040 microcontroller are 
 
 <img src="diagrams/RP2040 to Raspberry Pi Pico GPIO Mapping Schematic.png" alt="RP2040 to Raspberry Pi Pico GPIO Mapping Schematic" width="800" height="500">
 
-## SPI-Serial Peripheral Interface
+## 3-SPI-Serial Peripheral Interface
+SPI is a synchronous, full-duplex serial communication bus with three or more signals. It is **synchronous** because of the presence of a dedicated clock line shared between all nodes. The clock helps all devices taking part in the communication to remain in sync. This increases the effective data rate on the line while reducing errors. **Full-duplex** means data can be sent and received at the same time using the dedicated data lines. In a standard application, there will be four signal lines.
+  - **MOSI**-This stands for Master Out Slave In or Controller Out Peripheral In (COPI) . This pin is the data output pin for the Central device but also at the same time, the data input pin for the Peripheral                device.
 
 
 
