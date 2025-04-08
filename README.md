@@ -108,6 +108,7 @@ On the Raspberry Pi Pico board, most GPIO pins are accessible and can be used fo
 
 ### 2.4-RP2040 to Raspberry Pi Pico GPIO Mapping Schematic
 This diagram shows how the internal GPIO pins of the RP2040 microcontroller are connected to the physical pins of the Raspberry Pi Pico board.
+
 <img src="diagrams/RP2040-to-Raspberry-Pi-Pico-GPIO-Mapping-Schematic.png" alt="RP2040 to Raspberry Pi Pico GPIO Mapping Schematic" width="800" height="500">
 
 
