@@ -30,6 +30,7 @@ The RP2040 is a 32-bit dual-core ARM Cortex-M0+ microcontroller designed by Rasp
 
 <img src="diagrams/rp2040_pinout.png" alt="RP2040 Pinout" width="700" height="600">
 
+The RP2040 supports SPI, UART, I²C, and PIO on all GPIO pins from 0 to 29. However, not all of these pins are physically accessible on the Raspberry Pi Pico board (or other demoboard)—some are used internally or not broken out. So, for any practical project, we must use only the GPIOs that are physically available on the Pico’s pin headers.<br>
 For more details on GPIO pin functions and internal peripheral mappings, refer to the official [RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf).Each GPIO pin on the RP2040 is connected to various internal peripherals (like SPI,UART,I2C etc.) , offering high flexibility for custom I/O functions.SIO, PIO0 and PIO1 are connected to all GPIO pins and are controlled by software (or software controlled state machines) so can be used to implement
 many functions.
 
@@ -102,7 +103,8 @@ The RP2040 includes two UART interfaces — UART0 and UART1 — which can also b
 | **UART0**          | `GPIO0`, `GPIO12`, `GPIO16`                      | `GPIO1`, `GPIO13`, `GPIO17`                      |
 | **UART1**          | `GPIO4`, `GPIO8`                     | `GPIO5`, `GPIO9`                  |
 
-
+#### PIO Pin Mapping
+On the Raspberry Pi Pico board, most GPIO pins are accessible and can be used for PIO. However, GPIO23, GPIO24, GPIO25 and GPIO29 (ADC3) are either used internally (like LED or voltage monitoring) or not exposed via the physical headers, so they are not available for general-purpose PIO use in most projects.
 
 
 
