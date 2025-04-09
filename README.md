@@ -74,14 +74,13 @@ The RP2040 microcontroller is used in various Raspberry Pi boards, including the
     - **`ADC0`** → **`GPIO26`**
     - **`ADC1`** → **`GPIO27`**
     - **`ADC2`** → **`GPIO28`**
-    - **`ADC3`** → Internal Temperature Sensor (**`GPIO29`**, not exposed)
+    - **`ADC_VREF`**: Reference voltage for ADC (defaults to 3.3V)
 - **Power Pins:**
     - **`VBUS`**: 5V from USB
     - **`VSYS`**: Main power input (1.8V–5.5V)
     - **`3V3`**: Regulated 3.3V output
     - **`GND`**: Multiple ground pins
     - **`3V3_EN`**: Enable pin for 3.3V regulator (pull low to disable)
-    - **`ADC_VREF`**: Reference voltage for ADC (defaults to 3.3V)
 - **Debug Pins:**
     - **`SWDIO`** and **`SWCLK`** are used for debugging (Single Wire Debug)
 
