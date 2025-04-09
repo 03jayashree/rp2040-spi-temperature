@@ -1,5 +1,6 @@
 # 1.Introduction to Micropython
 MicroPython is a lightweight implementation of Python 3 designed specifically for microcontrollers and embedded systems. It allows you to write Python code to control hardware like sensors, displays, motors, etc., on boards like the Raspberry Pi Pico, ESP32, and Arduino-compatible boards. You get an interactive prompt (the REPL) to execute commands immediately via USB Serial, and a built-in filesystem. The Pico port of MicroPython includes modules for accessing low-level chip-specific hardware.
+
 ## 1.1.Installing MicroPython on a Pico-series Device
 Follow these steps to install MicroPython on any pico series demoboard:
 1. **Download the Firmware**  
@@ -14,6 +15,7 @@ Follow these steps to install MicroPython on any pico series demoboard:
    - Drag and drop the `.uf2` file onto this drive.
 4. **Automatic Reboot**  
    - The board will reboot automatically and launch MicroPython.
+     
 ## 1.2. Connecting to the MicroPython REPL over USB
 You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Raspberry Pi using the USB serial interface:
 1. **Connect your Raspberry Pi Pico** via the micro USB port.
@@ -98,6 +100,10 @@ Utility for encoding and decoding:
 
 #### 5.8. `machine.UART`
 - Use UART for asynchronous serial communication.
+
+## 1.4. ADC
+An analogue-to-digital converter (ADC) measures some analogue signal and encodes it as a digital number. The ADC on RP-series microcontrollers measures voltages.
+
 
 
 
