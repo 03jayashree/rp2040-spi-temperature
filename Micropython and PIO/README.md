@@ -151,8 +151,9 @@ Initialise the SPI bus with the given parameters:
 - **SPI.MSB** / **SoftSPI.MSB**:Set the first bit to be the most significant bit
 - **SPI.LSB** / **SoftSPI.LSB** :Set the first bit to be the least significant bit
 
-
-
+```bash 
+NOTE:The above class is only for SPI Master.The RP2040 doesn’t have built-in support for SPI slave in MicroPython, so trying to use it that way doesn’t work well—MicroPython alone can’t keep up with the exact timing SPI needs. PIO (Programmable I/O) solves this by handling the SPI signals (like clock and data) at the hardware level, with precise timing. It works alongside MicroPython, which takes care of logic and processing. So, by combining PIO and MicroPython, we can get a reliable SPI slave setup that the RP2040 couldn’t do with MicroPython alone.
+```
 
   
 
