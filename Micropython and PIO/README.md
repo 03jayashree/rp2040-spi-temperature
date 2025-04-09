@@ -51,7 +51,37 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    Hello, Pico!
    >>>
    ```
-  
+ ### Supported features of Micropython
+ #### REPL Access
+- **REPL over USB and UART (GP0/GP1):**  
+  Interact with your board in real-time via USB or UART. Useful for debugging, testing, and live coding.
+ #### Filesystem
+- **1600 kB littlefs2 Filesystem:**  
+  The onboard flash is formatted with `littlefs2`, allowing file storage (scripts, logs, config files).
+ #### `utime` Module
+ Provides basic time-related utilities:
+- `sleep(seconds)` – Pause execution.
+- `ticks_ms()` / `ticks_us()` – Retrieve system ticks for interval measurements.
+#### `ubinascii` Module
+Utility for encoding and decoding:
+- `hexlify(data)` – Converts binary data to hexadecimal.
+- `unhexlify(hex_str)` – Converts hexadecimal string back to bytes.
+#### `machine` Module – Direct Hardware Control
+##### `machine.Pin`
+- Use GPIOs as digital input/output.
+- Example: `led = Pin(25, Pin.OUT); led.toggle()`
+##### `machine.Timer`
+- Schedule functions at intervals or delays.
+- Example: `Timer().init(freq=1, callback=lambda t: print("Tick"))`
+##### `machine.ADC`
+- Read analog voltages (e.g., potentiometers, sensors).
+- Example: `temp = ADC(4).read_u16()`
+##### `machine.I2C`/ `machine.SoftI2C`
+- Communicate with I2C peripherals.
+- `SoftI2C` allows using any GPIOs as SDA/SCL.
+##### machine.SPI / machine.SoftSPI
+
+
 
 
 
