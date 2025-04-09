@@ -142,7 +142,7 @@ Refer to `spi_example.py`
 
 ### **Methods**
 
-- **SPI.init**(*baudrate=1000000, *, polarity=0, phase=0, bits=8, firstbit=SPI.MSB, sck=None, mosi=None, miso=None*)
+- **SPI.init**(*baudrate=1000000,polarity=0, phase=0, bits=8, firstbit=SPI.MSB, sck=None, mosi=None, miso=None*)
 Initialise the SPI bus with the given parameters:
    - `baudrate` is the SCK clock rate.
    - `polarity` can be 0 or 1, and is the level the idle clock line sits at.
@@ -152,15 +152,15 @@ Initialise the SPI bus with the given parameters:
    - `sck`, `mosi`, `miso` are pins (machine.Pin) objects to use for bus signals. For most hardware SPI blocks (as selected by `id` parameter to the constructor), 
       pins are fixed and cannot be changed. In some cases, hardware blocks allow 2-3 alternative pin sets for a hardware SPI block. Arbitrary pin assignments are 
       possible only for a bitbanging SPI driver (`id` = -1).
-- **SPI.deinit**():Turn off the SPI bus.
-- **SPI.read**(*nbytes, write=0x00*):Read a number of bytes specified by `nbytes` while continuously writing the single byte given by `write`. Returns a `bytes` object with the data that was read.
-- **SPI.readinto**(*buf, write=0x00*):Read into the buffer specified by `buf` while continuously writing the single byte given by `write`. Returns `None`.
-- **SPI.write**(*buf*):Write the `bytes` contained in buf. Returns `None`.
-- **SPI.write_readinto**(*write_buf,read_buf*):Write the bytes from `write_buf` while reading into `read_buf`. The buffers can be the same or different, but both buffers must have the same length. Returns `None`.
+- **SPI.deinit**(): Turn off the SPI bus.
+- **SPI.read**(*nbytes, write=0x00*): Read a number of bytes specified by `nbytes` while continuously writing the single byte given by `write`. Returns a `bytes` object with the data that was read.
+- **SPI.readinto**(*buf, write=0x00*): Read into the buffer specified by `buf` while continuously writing the single byte given by `write`. Returns `None`.
+- **SPI.write**(*buf*): Write the `bytes` contained in buf. Returns `None`.
+- **SPI.write_readinto**(*write_buf,read_buf*): Write the bytes from `write_buf` while reading into `read_buf`. The buffers can be the same or different, but both buffers must have the same length. Returns `None`.
 ### **Constants**
 
-- **SPI.MSB** / **SoftSPI.MSB**:Set the first bit to be the most significant bit
-- **SPI.LSB** / **SoftSPI.LSB** :Set the first bit to be the least significant bit
+- **SPI.MSB** / **SoftSPI.MSB**: Set the first bit to be the most significant bit
+- **SPI.LSB** / **SoftSPI.LSB** : Set the first bit to be the least significant bit
 
 ```text
  NOTE:The above class is only for SPI Master.The RP2040 doesn’t have built-in support for SPI slave in MicroPython, so trying to use it that way doesn’t work 
