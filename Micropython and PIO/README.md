@@ -67,7 +67,7 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
 - `hexlify(data)` – Converts binary data to hexadecimal.
 - `unhexlify(hex_str)` – Converts hexadecimal string back to bytes.
  #### 5.`machine` Module – Direct Hardware Control
-       ##### 5.1.`machine.Pin`
+   ##### 5.1.`machine.Pin`
    - Use GPIOs as digital input/output.
    ##### 5.2.`machine.Timer`
    - Schedule functions at intervals or delays.
@@ -77,6 +77,16 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    - Communicate with I2C peripherals.
    - `SoftI2C` allows using any GPIOs as SDA/SCL.
    ##### 5.5.`machine.SPI` / `machine.SoftSPI`
+   - Talk to SPI devices like SD cards or shift registers.
+   - `SoftSPI` is software-based, allowing flexible pin assignments.
+   ##### 5.6.`machine.WDT`
+   - Watchdog Timer: Resets the board automatically if the code gets stuck.
+   ##### 5.7.machine.PWM
+   - Generate PWM signals to control
+   ##### 5.8.machine.UART
+   -Use UART for serial communication 
+
+
 
 
 
