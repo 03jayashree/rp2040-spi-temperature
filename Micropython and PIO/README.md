@@ -122,6 +122,61 @@ adc = machine.ADC(0) # Connect to channel 0 (GP26)
 For the complete code refer to `test_code`.
 
 ## 1.5. Micropython SPI
+Refer to `spi_example.py`
+
+### **Constructors**
+
+- *class* **machine.SPI**(*id, ...*):Construct an SPI object on the given bus, id. Values of id depend on a particular port and its hardware. Values 0, 1, etc. are commonly used to select hardware SPI block #0, #1, etc.
+- *class* **machine.SoftSPI**(*baudrate=1000000,polarity=0, phase=0, bits=8, firstbit=MSB, sck=None, mosi=None, miso=None*):Construct a new software SPI object. Additional parameters must be given, usually at least sck, mosi and miso, and these are used to initialise the bus.
+
+### **Methods**
+
+- **SPI.init**(*baudrate=1000000, *, polarity=0, phase=0, bits=8, firstbit=SPI.MSB, sck=None, mosi=None, miso=None*)
+Initialise the SPI bus with the given parameters:
+   - `baudrate` is the SCK clock rate.
+   - `polarity` can be 0 or 1, and is the level the idle clock line sits at.
+   - `phase` can be 0 or 1 to sample data on the first or second clock edge respectively.
+   - `bits` is the width in bits of each transfer. Only 8 is guaranteed to be supported by all hardware.
+   - firstbit can be SPI.MSB or SPI.LSB.
+   - `sck`, `mosi`, `miso` are pins (machine.Pin) objects to use for bus signals. For most hardware SPI blocks (as selected by `id` parameter to the constructor), 
+      pins are fixed and cannot be changed. In some cases, hardware blocks allow 2-3 alternative pin sets for a hardware SPI block. Arbitrary pin assignments are 
+      possible only for a bitbanging SPI driver (`id` = -1).
+- **SPI.deinit**():Turn off the SPI bus.
+- **SPI.read**(*nbytes, write=0x00*):Read a number of bytes specified by `nbytes` while continuously writing the single byte given by `write`. Returns a `bytes` object with the data that was read.
+- **SPI.readinto**(*buf, write=0x00*):Read into the buffer specified by `buf` while continuously writing the single byte given by `write`. Returns `None`.
+- **SPI.write**(*buf*):Write the `bytes` contained in buf. Returns `None`.
+- **SPI.write_readinto**(*write_buf,read_buf*):Write the bytes from `write_buf` while reading into `read_buf`. The buffers can be the same or different, but both buffers must have the same length. Returns `None`.
+### **Constants**
+
+- **SPI.MSB** / **SoftSPI.MSB**:Set the first bit to be the most significant bit
+- **SPI.LSB** / **SoftSPI.LSB** :Set the first bit to be the least significant bit
+
++ ⚠️ NOTE:
++ The RP2040 doesn’t have built-in support for SPI slave in MicroPython,
++ so trying to use it that way doesn’t work well—MicroPython alone can’t keep up
++ with the exact timing SPI needs.
++
++ PIO (Programmable I/O) solves this by handling the SPI signals
++ (like clock and data) at the hardware level, with precise timing.
++ It works alongside MicroPython, which takes care of logic and processing.
++
++ So, by combining PIO and MicroPython, you get a reliable SPI slave setup
++ that the RP2040 couldn’t do with MicroPython alone.
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 
 
 
