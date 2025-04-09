@@ -1,6 +1,6 @@
-### Introduction to Micropython
+# 1.Introduction to Micropython
 MicroPython is a lightweight implementation of Python 3 designed specifically for microcontrollers and embedded systems. It allows you to write Python code to control hardware like sensors, displays, motors, etc., on boards like the Raspberry Pi Pico, ESP32, and Arduino-compatible boards. You get an interactive prompt (the REPL) to execute commands immediately via USB Serial, and a built-in filesystem. The Pico port of MicroPython includes modules for accessing low-level chip-specific hardware.
-### Installing MicroPython on a Pico-series Device
+## 1.1.Installing MicroPython on a Pico-series Device
 Follow these steps to install MicroPython on any pico series demoboard:
 1. **Download the Firmware**  
    Visit the official Raspberry Pi documentation and download the MicroPython `.uf2` file for your board:  
@@ -14,7 +14,7 @@ Follow these steps to install MicroPython on any pico series demoboard:
    - Drag and drop the `.uf2` file onto this drive.
 4. **Automatic Reboot**  
    - The board will reboot automatically and launch MicroPython.
-### Connecting to the MicroPython REPL over USB
+## 1.2. Connecting to the MicroPython REPL over USB
 You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Raspberry Pi using the USB serial interface:
 1. **Connect your Raspberry Pi Pico** via the micro USB port.
 2. **Check available serial devices**:
@@ -51,7 +51,7 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    Hello, Pico!
    >>>
    ```
- ### Supported features of Micropython
+ ## 1.3. Supported features of Micropython
  #### 1.REPL Access
 - **REPL over USB and UART (GP0/GP1):**  
   Interact with your board in real-time via USB or UART. Useful for debugging, testing, and live coding.
@@ -66,8 +66,8 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
  Utility for encoding and decoding:
 - `hexlify(data)` – Converts binary data to hexadecimal.
 - `unhexlify(hex_str)` – Converts hexadecimal string back to bytes.
-#### 5.`machine` Module – Direct Hardware Control
-   ##### 5.1.`machine.Pin`
+ #### 5.`machine` Module – Direct Hardware Control
+       ##### 5.1.`machine.Pin`
    - Use GPIOs as digital input/output.
    ##### 5.2.`machine.Timer`
    - Schedule functions at intervals or delays.
