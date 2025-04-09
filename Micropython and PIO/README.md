@@ -52,34 +52,31 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    >>>
    ```
  ### Supported features of Micropython
- #### REPL Access
+ #### 1.REPL Access
 - **REPL over USB and UART (GP0/GP1):**  
   Interact with your board in real-time via USB or UART. Useful for debugging, testing, and live coding.
- #### Filesystem
-- **1600 kB littlefs2 Filesystem:**  
+ #### 2.Filesystem
+- **1600 kB `littlefs2` Filesystem:**  
   The onboard flash is formatted with `littlefs2`, allowing file storage (scripts, logs, config files).
- #### `utime` Module
+ #### 3.`utime` Module
  Provides basic time-related utilities:
 - `sleep(seconds)` – Pause execution.
 - `ticks_ms()` / `ticks_us()` – Retrieve system ticks for interval measurements.
-#### `ubinascii` Module
-Utility for encoding and decoding:
+ #### 4.`ubinascii` Module
+ Utility for encoding and decoding:
 - `hexlify(data)` – Converts binary data to hexadecimal.
 - `unhexlify(hex_str)` – Converts hexadecimal string back to bytes.
-#### `machine` Module – Direct Hardware Control
-##### `machine.Pin`
-- Use GPIOs as digital input/output.
-- Example: `led = Pin(25, Pin.OUT); led.toggle()`
-##### `machine.Timer`
-- Schedule functions at intervals or delays.
-- Example: `Timer().init(freq=1, callback=lambda t: print("Tick"))`
-##### `machine.ADC`
-- Read analog voltages (e.g., potentiometers, sensors).
-- Example: `temp = ADC(4).read_u16()`
-##### `machine.I2C`/ `machine.SoftI2C`
-- Communicate with I2C peripherals.
-- `SoftI2C` allows using any GPIOs as SDA/SCL.
-##### machine.SPI / machine.SoftSPI
+#### 5.`machine` Module – Direct Hardware Control
+   ##### 5.1.`machine.Pin`
+   - Use GPIOs as digital input/output.
+   ##### 5.2.`machine.Timer`
+   - Schedule functions at intervals or delays.
+   ##### 5.3.`machine.ADC`
+   - Read analog voltages (e.g., potentiometers, sensors).
+   ##### 5.4.`machine.I2C`/ `machine.SoftI2C`
+   - Communicate with I2C peripherals.
+   - `SoftI2C` allows using any GPIOs as SDA/SCL.
+   ##### 5.5.`machine.SPI` / `machine.SoftSPI`
 
 
 
