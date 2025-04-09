@@ -51,7 +51,7 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    Hello, Pico!
    >>>
    ```
-   If you see the response, you're successfully communicating with your Raspberry Pi Pico over USB using MicroPython!
+  
 
 
 
