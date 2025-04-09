@@ -106,9 +106,20 @@ An analogue-to-digital converter (ADC) measures some analogue signal and encodes
 
 The ADC on RP2040 has a resolution of 12-bits, meaning that it can transform an analogue signal into a digital signal as a number ranging from 0 to 4095 – though this is handled in MicroPython transformed to a 16-bit number ranging from 0 to 65535, so that it behaves the same as the ADC on other MicroPython microcontrollers.
 
-RP2040 have five ADC channels total, four of which are brought out to chip GPIOs: GP26, GP27, GP28 and GP29. On Pico W and Pico, the first three of these are brought out to GPIO pins, and the fourth can be used to measure the VSYS voltage on the board.
+RP2040 have five ADC channels total, four of which are brought out to chip GPIOs: GP26, GP27, GP28 and GP29. On Pico, the first three of these are brought out to GPIO pins, and the fourth can be used to measure the VSYS voltage on the board.
 
 The ADC’s fifth input channel is connected to a temperature sensor built into RP2040.
+
+You can specify which ADC channel you’re using by pin number:
+```bash
+adc = machine.ADC(26) # Connect to GP26, which is channel 0
+```
+or by channel:
+```bash
+adc = machine.ADC(4) # Connect to the internal temperature sensor
+adc = machine.ADC(0) # Connect to channel 0 (GP26)
+```
+For the temp. redaing code refer to `test_code`.
 
 
 
