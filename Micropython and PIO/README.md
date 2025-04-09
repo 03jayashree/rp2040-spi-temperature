@@ -4,7 +4,7 @@ MicroPython is a lightweight implementation of Python 3 designed specifically fo
 Follow these steps to install MicroPython on any pico series demoboard:
 1. **Download the Firmware**  
    Visit the official Raspberry Pi documentation and download the MicroPython `.uf2` file for your board:  
-   [👉 MicroPython Firmware Download](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
+   [MicroPython Firmware Download](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
 2. **Enter BOOTSEL Mode**  
    - Unplug your Pico from any power source.  
    - Hold down the **BOOTSEL** button.  
@@ -17,8 +17,9 @@ Follow these steps to install MicroPython on any pico series demoboard:
 ### Connecting to the MicroPython REPL over USB
 You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Raspberry Pi using the USB serial interface:
 1.Connect your Raspberry Pi Pico via USB.
+
 2.Check the serial port:
-```bash ls /dev/tty* ```
+<pre> ```bash ls /dev/tty* ``` </pre>
 
 
 
