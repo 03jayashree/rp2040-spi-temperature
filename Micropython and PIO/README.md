@@ -119,7 +119,10 @@ or by channel:
 adc = machine.ADC(4) # Connect to the internal temperature sensor
 adc = machine.ADC(0) # Connect to channel 0 (GP26)
 ```
-For the temp. redaing code refer to `test_code`.
+For the complete code refer to `test_code`.
+
+## 1.5. Micropython SPI
+
 
 
 
