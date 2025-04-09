@@ -3,6 +3,7 @@
 MicroPython is a lightweight implementation of Python 3 designed specifically for microcontrollers and embedded systems. It allows you to write Python code to control hardware like sensors, displays, motors, etc., on boards like the Raspberry Pi Pico, ESP32, and Arduino-compatible boards. You get an interactive prompt (the REPL) to execute commands immediately via USB Serial, and a built-in filesystem. The Pico port of MicroPython includes modules for accessing low-level chip-specific hardware.
 
 ## 1.1.Installing MicroPython on a Pico-series Device
+
 Follow these steps to install MicroPython on any pico series demoboard:
 1. **Download the Firmware**  
    Visit the official Raspberry Pi documentation and download the MicroPython `.uf2` file for your board:  
@@ -18,6 +19,7 @@ Follow these steps to install MicroPython on any pico series demoboard:
    - The board will reboot automatically and launch MicroPython.
      
 ## 1.2. Connecting to the MicroPython REPL over USB
+
 You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Raspberry Pi using the USB serial interface:
 1. **Connect your Raspberry Pi Pico** via the micro USB port.
 2. **Check available serial devices**:
@@ -109,6 +111,7 @@ Utility for encoding and decoding:
 - Use UART for asynchronous serial communication.
 
 ## 1.4. ADC
+
 An analogue-to-digital converter (ADC) measures some analogue signal and encodes it as a digital number. The ADC on RP-series microcontrollers measures voltages.
 
 The ADC on RP2040 has a resolution of 12-bits, meaning that it can transform an analogue signal into a digital signal as a number ranging from 0 to 4095 – though this is handled in MicroPython transformed to a 16-bit number ranging from 0 to 65535, so that it behaves the same as the ADC on other MicroPython microcontrollers.
@@ -129,6 +132,7 @@ adc = machine.ADC(0) # Connect to channel 0 (GP26)
 For the complete code refer to `test_code`.
 
 ## 1.5. Micropython SPI
+
 Refer to `spi_example.py`
 
 ### **Constructors**
