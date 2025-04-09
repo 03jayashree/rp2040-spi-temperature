@@ -23,17 +23,17 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    ls /dev/tty*
    ```
    Look for a device like `/dev/ttyACM0`. To confirm, unplug and replug the Pico and observe which device disappears/reappears.
-4. **Install `minicom`**:
+3. **Install `minicom`**:
 
    ```bash
    sudo apt install minicom
    ```
-5. **Open the REPL using `minicom`**:
+4. **Open the REPL using `minicom`**:
 
    ```bash
    minicom -o -D /dev/ttyACM0
    ```
-7. **Interact with the REPL**:
+5. **Interact with the REPL**:
    Press `Enter` a few times until you see the `>>>` prompt.
    If you press `CTRL-D` on your keyboard whilst the `minicom` terminal is focused, you should see a message similar to this:
 
@@ -44,7 +44,14 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    >>>
    ```
    It will display the firmware version and reload the REPL prompt.
-
+6. **Say "Hello, Pico!"**:
+   Once you're in the REPL, try typing your first Python command:
+   ```python
+   >>> print("Hello, Pico!")
+   Hello, Pico!
+   >>>
+   ```
+   If you see the response, you're successfully communicating with your Raspberry Pi Pico over USB using MicroPython!
 
 
 
