@@ -53,6 +53,12 @@ You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Ra
    Hello, Pico!
    >>>
    ```
+   ```text
+   NOTE: The above steps for firmware installation and accessing the REPL are the standard method to get started with MicroPython. However, for 
+   this project, we will not be using that approach. Instead, we will use the Thonny IDE to handle firmware installation and serial communication. You are 
+   encouraged to read the above for understanding, but no action is required at this point.
+   ```
+   
  ## 1.3. Supported Features of MicroPython
 
 ### 1. REPL Access
