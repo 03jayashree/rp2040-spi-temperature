@@ -1,5 +1,14 @@
 # SPI based Digital Temperature Monitor using RP2040
-This project utilizes the RP2040's Programmable I/O (PIO) to implement an SPI slave that transmits internal temperature sensor data to a master device. It is written in MicroPython and developed using Thonny IDE on a Raspberry Pi Pico demoboard.
+## Project Abstract
+This project utilizes the RP2040's Programmable I/O (PIO) to implement a custom SPI slave that sends internal temperature sensor data to an SPI master. It is developed using MicroPython on the Raspberry Pi Pico development board and programmed via the Thonny IDE. The project demonstrates reading and formatting temperature data, SPI data transmission, and configuring GPIO pins for communication—all aimed at providing a hands-on understanding of SPI protocol and low-level embedded systems programming using MicroPython.
+## Projct Description
+This project is built around the RP2040 microcontroller, which features dual-core processing, flexible GPIO, and support for protocols like SPI, I2C, and UART. The Raspberry Pi Pico board brings this chip to life but only exposes a subset of GPIOs physically, making pin mapping an important first step.
+
+We focus on SPI communication, using the RP2040 as a slave device to transmit internal temperature data. Tables are provided to help users choose the correct SPI0/SPI1 pins available on the Pico board.
+
+The project is developed using MicroPython and the Thonny IDE, offering a simple way to write, upload, and debug code on the Pico. For accurate SPI slave behavior, we use PIO (Programmable I/O)—a unique feature of the RP2040 that allows custom protocol implementation at the hardware level.
+
+In the end, this project demonstrates how to read temperature from the internal sensor, format it into a 16-bit value, and send it via SPI using PIO—all while offering insight into embedded programming with MicroPython.
 ## Table of Contents
 <ul>
   <li><a href="#rp2040">Introduction to RP2040 Microcontroller</a></li>
