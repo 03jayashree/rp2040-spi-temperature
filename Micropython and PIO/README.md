@@ -18,21 +18,25 @@ Follow these steps to install MicroPython on any pico series demoboard:
 You can access the MicroPython REPL (Read-Eval-Print Loop) directly from your Raspberry Pi using the USB serial interface:
 1. **Connect your Raspberry Pi Pico** via the micro USB port.
 2. **Check available serial devices**:
-   ```bash
+
+    ```bash
    ls /dev/tty*
    ```
    Look for a device like `/dev/ttyACM0`. To confirm, unplug and replug the Pico and observe which device disappears/reappears.
-3. **Install `minicom`**:
+4. **Install `minicom`**:
+
    ```bash
    sudo apt install minicom
    ```
-4. **Open the REPL using `minicom`**:
+5. **Open the REPL using `minicom`**:
+
    ```bash
    minicom -o -D /dev/ttyACM0
    ```
-5. **Interact with the REPL**:
+7. **Interact with the REPL**:
    Press `Enter` a few times until you see the `>>>` prompt.
    If you press `CTRL-D` on your keyboard whilst the `minicom` terminal is focused, you should see a message similar to this:
+
    ```bash
    MPY: soft reboot
    MicroPython v1.13-422-g904433073 on 2021-01-19; Raspberry Pi Pico with RP2040
